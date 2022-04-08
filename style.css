@@ -1,0 +1,163 @@
+/* PARAMETERS
+
+Right Margin:  18%
+left margin: 18%
+font: Poppins; PT Serif */
+
+body{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+/* HEADER */
+
+#header{
+    display: flex;
+    justify-content: space-between;
+}
+
+#header h1{
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 47.7px;
+    text-align: left;
+    margin-top: 7%;
+    margin-left: 18%;
+}
+
+#sub-header{
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    margin-top: 6.5%;
+    margin-right: 18%;
+}
+
+#sub-header h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    text-transform: uppercase;
+}
+
+#sub-header p{
+    line-break: auto;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+    margin-top: -6%;
+}
+
+/* People */
+
+#people{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: 18%;
+}
+
+.pic-card{
+    display: grid;
+    padding: 5%;
+}
+
+.pic-card img{
+    width: 10vw;
+    height: 28.5vh;
+}
+
+.pic-card > .name{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 15.9px;
+    text-transform: capitalize;
+}
+
+.pic-card > .role{
+    writing-mode: vertical-rl;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15.9px;
+    grid-row: 1;
+    grid-column: 2;
+}
+
+#c-2, #c-5{
+    margin-top: 7.5%;
+}
+
+/* FOOTER */
+
+footer{
+    font-size: 14px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #bdbdbd;
+    font-weight: 700, bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%;
+}
+
+/* RESPONSIVENESS */
+
+/* for less than 600px */
+
+@media only screen and (max-width: 630px){
+
+    #header{
+        display: grid;
+    }
+
+    #header h1{
+        font-size: 36px;
+        line-height: 48px;
+        margin-left: 5%;
+        margin-top: 18%;
+    }
+
+    #sub-header{
+        margin-left: 5%;
+    }
+
+    #sub-header h3{
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    #sub-header p{
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 400;
+    }
+
+    #people{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        margin-left: 8%;
+    }
+    
+    .pic-card{
+        display: grid;
+        padding: 2%;
+    }
+    
+    .pic-card img{
+        width: 30vw;
+        height: 32vh;
+    }
+    
+    #c-2, #c-4, #c-6{
+        margin-top: 26%;
+    }
+}
